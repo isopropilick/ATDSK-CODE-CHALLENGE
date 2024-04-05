@@ -1,0 +1,19 @@
+{
+  "name": "atdsk-code-challenge",
+  "version": "1.0.0",
+  "description": "Solution to problem #1",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "Eric Pereyra",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}

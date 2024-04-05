@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maximum Product Calculator</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="container mt-5">
+    <h1>Find the Maximum Product of an array</h1>
+    <div>
+        <label for="numbersInput"></label>
+        <input type="text" id="numbersInput" class="form-control" placeholder="Enter numbers separated by commas">
+        <button id="calculateBtn" class="btn btn-primary mt-2">Calculate</button>
+    </div>
+    <div id="result" class="mt-3"></div>
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    document.getElementById('calculateBtn').addEventListener('click', () => {
+        const numbers = document.getElementById('numbersInput').value;
+        fetch('/calculate', {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json',},
+            body: JSON.stringify({ numbers })})
+            .then(response => response.json())
+            .then(data => {
+                if (data.error !== undefined) {
+                    console.error('Error:', data.error)
+                    document.getElementById('result').innerHTML = `Error: ${data.error}`;
+                }else {document.getElementById('result').innerHTML = `Maximum Product: ${data.maxProduct}`}
+            }).catch((error) => {console.error('Error:', error)
+        });
+    });
+</script>
+</body>
+</html>
