@@ -91,10 +91,11 @@ describe('calc', () => {
 
 # CI/CD
 I have set up a simple docker/jenkins pipeline to automate the testing process. The pipeline is defined in the Jenkinsfile and it is triggered when a new commit is pushed to the repository. The pipeline runs the test cases and reports the results. The pipeline is defined in the Jenkinsfile and it is triggered when a new commit is pushed to the repository. The pipeline runs the test cases and reports the results.
-![Screenshot4.png](https://github.com/isopropilick/ATDSK-CODE-CHALLENGE/Screenshot%202024-04-05%20163145.png)
-![Screenshot0.png](https://github.com/isopropilick/ATDSK-CODE-CHALLENGE/Screenshot%202024-04-05%20163205.png)
-![Screenshot1.png](https://github.com/isopropilick/ATDSK-CODE-CHALLENGE/Screenshot%202024-04-05%20163212.png)
-![Screenshot2.png](https://github.com/isopropilick/ATDSK-CODE-CHALLENGE/Screenshot%202024-04-05%20163224.png)
+
+![Screenshot4.png](https://github.com/isopropilick/ATDSK-CODE-CHALLENGE/blob/main/Screenshot%202024-04-05%20163145.png)
+![Screenshot0.png](https://github.com/isopropilick/ATDSK-CODE-CHALLENGE/blob/main/Screenshot%202024-04-05%20163205.png)
+![Screenshot1.png](https://github.com/isopropilick/ATDSK-CODE-CHALLENGE/blob/main/Screenshot%202024-04-05%20163212.png)
+![Screenshot2.png](https://github.com/isopropilick/ATDSK-CODE-CHALLENGE/blob/main/Screenshot%202024-04-05%20163224.png)
 
 # Live Demo
 The pipeline is runing in my local homelab, you can see the results in the following link: https://autodesk-challenge.ericpereyra.com/
