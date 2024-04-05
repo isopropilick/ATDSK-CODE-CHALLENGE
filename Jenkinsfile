@@ -16,7 +16,7 @@ pipeline {
             steps {
                 script {
                     sh "docker stop max-product || true && docker rm max-product || true"
-                    sh "docker run -d -p 3000:3000 --name max-product -e max-product:latest"
+                    sh "docker run -d -p 3000:3000 --name max-product max-product:latest"
                 }
             }
         }
